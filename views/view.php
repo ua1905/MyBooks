@@ -11,8 +11,8 @@
     </header>
     <?php foreach ($books as $livre): ?>
     <article>
-        <h2><?php echo $livre['book_title'] ?></h2>
-        <p><?php echo $livre['book_summary'] ?></p>
+        <h2><?php echo $livre->getTitle() ?></h2>
+        <p><?php echo $livre->getContent() ?></p>
     </article>
     <?php endforeach ?>
     <footer class="footer">
