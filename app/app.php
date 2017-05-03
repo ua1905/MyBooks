@@ -20,3 +20,8 @@ $app->register(new Silex\Provider\AssetServiceProvider(), array(
 $app['dao.book'] = function ($app) {
     return new MyBooks\DAO\BookDAO($app['db']);
 };
+
+// Register services.
+$app['dao.author'] = function ($app) {
+    return new MyBooks\DAO\AuthorDAO($app['db']);
+};
